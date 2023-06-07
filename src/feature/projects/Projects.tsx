@@ -99,7 +99,7 @@ export const Projects = () => {
             </div>
             <div className={s.grid}>
                 {projects.map(el => (
-                    <div key={el.id} style={el.style} onClick={() => {}}></div>
+                    <div key={el.id} style={el.style} onClick={() => {navigate(`/projects/${el.id}`)}}></div>
                 ))}
                 {/*<div className={s.project1} onClick={() => {}}></div>*/}
                 {/*<div className={s.project2} onClick={() => {}}></div>*/}

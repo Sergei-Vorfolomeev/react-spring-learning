@@ -12,7 +12,7 @@ export function App() {
             <Routes>
                 <Route path={'/'} element={<MainPage/>}/>
                 <Route path={'/projects'} element={<Projects/>}/>
-                <Route path={'/projects:projectId'} element={<Projects />}/>
+                <Route path={'/projects/:projectId'} element={<Projects />}/>
 
             </Routes>
         </div>
