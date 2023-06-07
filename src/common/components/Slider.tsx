@@ -3,7 +3,6 @@ import {animated, useTransition} from "@react-spring/web";
 import s from "./Slider.module.scss";
 import {AlbumType} from "feature/projects/Projects";
 
-
 type PropsType = {
     album: AlbumType[]
 }
@@ -20,7 +19,6 @@ export const Slider = ({album}: PropsType) => {
             duration: 500
         },
         onRest: () => {
-            debugger
             prevIndexRef.current = activeIndex
         }
     })

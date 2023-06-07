@@ -1,9 +1,24 @@
-.app {
+@import 'common/scss/variables';
 
+:root {
+  --index: calc(1vw + 1vh)
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-weight: 400;
+  font-family: 'Sora', sans-serif;;
+  color: $default-font-color;
+  background: $default-background-color;
 }
 
 
+.app {
 
+}
 
 
 .thirdDiv {
