@@ -1,5 +1,5 @@
 @import 'common/scss/variables';
-@import 'App.module';
+@import 'app/App.module';
 
 .mainContainer {
   min-height: 100vh;
@@ -68,39 +68,6 @@
         'project7'
         'project8'
     ;
-    }
-
-    .project1 {
-      grid-area: project1;
-      background: #ffc504;
-    }
-    .project2 {
-      grid-area: project2;
-      background: #c2f50a;
-    }
-    .project3 {
-      grid-area: project3;
-      background: #77c7c8;
-    }
-    .project4 {
-      grid-area: project4;
-      background: #b18ad0;
-    }
-    .project5 {
-      grid-area: project5;
-      background: #adf1fc;
-    }
-    .project6 {
-      grid-area: project6;
-      background: #ff9696;
-    }
-    .project7 {
-      grid-area: project7;
-      background: #76b2fc;
-    }
-    .project8 {
-      grid-area: project8;
-      background: #feffc9;
     }
   }
 }

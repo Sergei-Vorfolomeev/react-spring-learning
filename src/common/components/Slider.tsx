@@ -1,13 +1,14 @@
 import React, {useRef, useState} from 'react';
 import {animated, useTransition} from "@react-spring/web";
 import s from "./Slider.module.scss";
-import {AlbumType} from "feature/projects/Projects";
+import {AlbumType} from "feature/projects/projectsReducer";
 
 type PropsType = {
     album: AlbumType[]
 }
 
 export const Slider = ({album}: PropsType) => {
+
     const [activeIndex, setActiveIndex] = useState(0)
     const prevIndexRef = useRef(-1)
 
@@ -23,7 +24,7 @@ export const Slider = ({album}: PropsType) => {
         }
     })
 
-    const onClick = () => setActiveIndex((activeIndex + 1) % 3)
+    // const onClick = () => setActiveIndex((activeIndex + 1) % 3)
 
     return (
         <div>

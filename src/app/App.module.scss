@@ -1,4 +1,4 @@
-@import 'common/scss/variables';
+@import '../common/scss/variables';
 
 :root {
   --index: calc(1vw + 1vh)
@@ -38,7 +38,7 @@
 
   .background {
     height: 100%;
-    background-image: url("common/background-img-folder/joshua-woroniecki-0UOI9Pgau7A-unsplash(1).jpg");
+    background-image: url("../common/background-img-folder/joshua-woroniecki-0UOI9Pgau7A-unsplash(1).jpg");
     background-position: center;
     background-size: cover;
   }
