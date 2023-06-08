@@ -1,20 +1,21 @@
 import React from 'react';
 import s from './Project.module.scss'
-import {Slider} from "common/components/Slider";
+import {Slider} from "common/components/slider/Slider";
 import {useAppSelector} from "app/store";
 import {useParams} from "react-router-dom";
 import {ProjectsType} from "feature/projects/projectsReducer";
+import {Navbar} from "common/components/navbar/Navbar";
 
 export const Project = () => {
 
     const projects = useAppSelector<ProjectsType[]>(state => state.projects)
-    const {projectId} = useParams()
+    const { projectId } = useParams()
 
     const project = projects.find(el => el.id === projectId)
-    console.log(project)
 
     return (
         <div className={s.mainContainer}>
+            <Navbar color={'#1d1d1d'}/>
             <Slider album={project!.album}/>
             <div className={s.infoContainer}>
                 <h1>{project?.title}</h1>

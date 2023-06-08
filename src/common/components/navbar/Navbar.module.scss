@@ -1,0 +1,45 @@
+@import 'common/scss/variables';
+
+.navbar {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  background: transparent;
+
+  .buttonContainer {
+    display: inline-block;
+    position: absolute;
+    z-index: 3;
+
+    button {
+      padding: 20px;
+    }
+  }
+
+
+  .menuItemContainer {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    padding-top: 2rem;
+    width: 100%;
+    text-align: center;
+
+    .menuItem {
+      display: inline-block;
+      padding: 0 3rem;
+      background: transparent;
+
+      a {
+        font-size: 3rem;
+        font-weight: 600;
+        color: $default-background-color;
+        background: transparent;
+        text-decoration: none;
+      }
+    }
+  }
+}

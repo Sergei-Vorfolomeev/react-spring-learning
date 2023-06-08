@@ -1,6 +1,6 @@
 import React, {useRef, useState} from 'react';
 import {animated, useTransition} from "@react-spring/web";
-import s from "./Slider.module.scss";
+import s from "common/components/slider/Slider.module.scss";
 import {AlbumType} from "feature/projects/projectsReducer";
 
 type PropsType = {

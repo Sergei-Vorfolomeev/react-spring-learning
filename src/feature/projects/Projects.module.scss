@@ -6,6 +6,11 @@
   background: $default-background-color;
   max-width: 132rem;
   margin: 0 auto;
+  position: relative;
+
+  .navbarContainer {
+
+  }
 
   .titleContainer {
     margin: 8rem auto;
