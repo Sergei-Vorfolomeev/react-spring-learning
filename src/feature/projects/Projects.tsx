@@ -11,15 +11,15 @@ export const Projects = () => {
 
     return (
         <div className={s.mainContainer}>
-            <div className={s.navbarContainer}>
-                <Navbar color={'#fff'}/>
-            </div>
+            <Navbar/>
             <div className={s.titleContainer}>
                 <h1>Portfolio</h1>
             </div>
             <div className={s.grid}>
                 {projects.map(el => (
-                    <div key={el.id} style={el.style} onClick={() => {navigate(`/projects/${el.id}`)}}></div>
+                    <div key={el.id} style={el.style} onClick={() => {
+                        navigate(`/projects/${el.id}`)
+                    }}></div>
                 ))}
             </div>
         </div>

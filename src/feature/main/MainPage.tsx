@@ -6,7 +6,7 @@ import {Navbar} from "common/components/navbar/Navbar";
 export const MainPage = () => {
     return (
         <section className={s.app}>
-            <Navbar color={'#1d1d1d'}/>
+            <Navbar />
             <div className={s.videoContainer}>
                 <video className={s.video} autoPlay muted loop>
                     <source src={universeVideo} type='video/mp4'/>

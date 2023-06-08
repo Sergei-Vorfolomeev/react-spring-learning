@@ -9,6 +9,8 @@
   .buttonContainer {
     display: inline-block;
     position: absolute;
+    top: 0;
+    left: 0;
     z-index: 3;
 
     button {
@@ -18,15 +20,19 @@
 
 
   .menuItemContainer {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background: transparent;
-    padding-top: 2rem;
+    background: $default-background-color;
     width: 100%;
     text-align: center;
+
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+      line-height: 2;
+      top: 30%;
+    }
 
     .menuItem {
       display: inline-block;
@@ -36,7 +42,6 @@
       a {
         font-size: 3rem;
         font-weight: 600;
-        color: $default-background-color;
         background: transparent;
         text-decoration: none;
       }

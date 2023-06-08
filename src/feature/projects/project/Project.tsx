@@ -15,7 +15,7 @@ export const Project = () => {
 
     return (
         <div className={s.mainContainer}>
-            <Navbar color={'#1d1d1d'}/>
+            <Navbar />
             <Slider album={project!.album}/>
             <div className={s.infoContainer}>
                 <h1>{project?.title}</h1>
