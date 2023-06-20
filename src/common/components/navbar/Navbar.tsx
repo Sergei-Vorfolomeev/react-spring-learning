@@ -60,7 +60,7 @@ export const Navbar = () => {
     })
     const popupMenuForMobileScreen = useSpring({
         config: {
-            duration: 100
+            duration: 150
         },
         from: {
             width: '0px',
@@ -71,6 +71,10 @@ export const Navbar = () => {
             height: '100vh'
         }
     })
+
+    // if (isOpen) {
+    //     document.body.style.overflow = 'hidden'
+    // }
 
     return (
         <nav className={s.navbar}>
